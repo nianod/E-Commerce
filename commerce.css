@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(190, 189, 189);
+}
+.bar {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.commerce-logo {
+    font-size: 20px;
+    font-weight: 500;
+}
+#cart-icon {
+    font-size:20px;
+    cursor: pointer;
+}
+section {
+    padding: 4rem 0 3rem;
+}
+.title-sec {
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+}
+.shopping {
+    margin: 1rem;
+}
+.shop-content {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, auto));
+    gap: 5px;
+    padding: 10px;
+    background-color: aliceblue;
+    justify-content: space-around;
+}
+.product-box img{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    background: black;
+    border-style: none;
+}
+.product-box:hover {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.2s;
+}
+.product-box h2 {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.add-cart {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    /* padding: 10px; */
+    cursor: pointer;
+}
