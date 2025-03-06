@@ -37,10 +37,17 @@ section {
     position: fixed;
     top: 0;
     right: 0;
-    width: 360px;
+    width: 300px;
     min-height: 100vh;
+    background: rgb(255, 255, 255);
     padding: 20px;
-    box-shadow: -2px 0 4;
+    box-shadow: -2px 0 4 hsl(0 4%, 15% / 10%);
+    overflow-x: hidden;
+}
+.cart h2 {
+    text-align: center;
+    color: rgb(180, 115, 115);
+
 }
 .title-sec {
     font-size: 25px;
@@ -54,8 +61,11 @@ section {
     margin-top: 15px;
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(220px, auto));
-    gap: 5px;
+    gap: 15px;
     padding: 10px;
+    margin-block: 20px;
+    /* justify-content: center; */
+    border-radius: 17px;
     /* background-color: aliceblue; */
 }
 .product-box img{
@@ -65,6 +75,7 @@ section {
     border: 1px solid black;
     background: black;
     border-style: none;
+    margin: 20px;
 }
 .price {
     margin-left: 15px;
@@ -82,11 +93,13 @@ section {
     text-align: center;
 }
 .add-cart {
-    position: relative;
+    position: absolute;
     cursor: pointer;
-    margin-left: 140px;
-    color: rgb(0, 0, 0);
+    margin-left: 180px;
+    color: rgb(255, 252, 252);
+
 }
 .product-box {
     background: rgb(126, 128, 127);
+    border-radius: 5px;
 }

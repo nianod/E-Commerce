@@ -13,14 +13,34 @@
         <div class="nav bar">
             <a href="#" class="commerce-logo">E-commerce</a>
             <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">your cart</h2>
+                <div class="cart-content">
+                    <div class="cart-box">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBz1xE1F9LE_mg7jiQU2Sa2pC5gCLNPyOhYA&s" alt="" class="cart-img">
+                        <div class="detail-box">
+                            <div class="cart-product-title">Earpods</div>
+                            <div class="cart-price">$50</div>
+                            <input type="number" value="1" class="cart-quantity">
+                        </div>
+                    </div>
+                        <i class="fa-solid fa-trash"></i>
+                </div>
+                    <div class="total">
+                        <div class="totat-title">Total</div>
+                        <div class="total-price">$50</div>
+                    </div>
+                    <button type="button" class="buy" id="buy-now">Buy now</button>
+                    <i class="fa-solid fa-x" id="close-cart"></i>
+            </div>
+
         </div>
-        <div class="cart"></div>
     </header>
     <section class="shop container">
         <h2 class="title-sec">Available products to shop</h2>
         <div class="shop-content">
             <div class="product-box">
-                <img src="/images/austin-poon-JO_S6ewBqAk-unsplash.jpg" width="200px" height="200px" class="shop-image">
+                <img src="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D" width="200px" height="200px" class="shop-image">
                 <h2 class="product-title">SONIC LAPTOP</h2>
                 <span class="price">$240</span>
                 <i class="fa-solid fa-cart-plus add-cart"></i>
@@ -81,5 +101,6 @@
             </div>
         </div>
     </section>
+    <script src="/commerce.js"></script>
 </body>
 </html>
