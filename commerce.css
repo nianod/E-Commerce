@@ -36,14 +36,17 @@ section {
 .cart {
     position: fixed;
     top: 10px;
-    right: 0;
+    right: -100%;
     border-radius: 10px;
     width: 300px;
     min-height: 100vh;
     background: rgb(255, 255, 255);
     padding: 20px;
     box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.4);
-    overflow-x: hidden;
+    transition: 0.3s;
+}
+.cart {
+    right: 0;
 }
 .cart h2 {
     text-align: center;
@@ -169,6 +172,30 @@ input {
     display: flex;
     margin: 0 100px 0 ;
     margin-top: 20px;
-    width: 80px;
+    width: 85px;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 2.3rem;
+    border: none;
+    background: navy;
+    color: whitesmoke;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.buy:hover {
+    cursor: pointer;
+    background-color: rgb(187, 182, 249);
+    color: navy;
+}
+#close-cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: px;
+}
+#close-cart:hover {
+    cursor: pointer;
 }
