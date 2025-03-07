@@ -74,8 +74,8 @@ section {
 }
 .product-box img{
     object-fit: cover;
-    height: 200px;
-    width: 200px;
+    height: 260px;
+    width: 90%;
     border: 1px solid black;
     background: black;
     border-style: none;
@@ -87,7 +87,7 @@ section {
 .product-box:hover {
     border: 1px solid black;
     cursor: pointer;
-    padding:  3px;
+    /* padding:  3px; */
     /* transition: 0.2s; */
 }
 .product-box h2 {
@@ -106,12 +106,14 @@ section {
 .product-box {
     background: rgb(110, 108, 102);
     border-radius: 5px;
+
 }
 .cart-content {
     display: flex;
 }
 .cart-box {
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-template-columns: 32% 50% 18%;
     align-items: center;
     gap: 1rem;
@@ -126,9 +128,47 @@ section {
 .cart-product-title {
     font-weight: 600;
 }
-.trash {
-    /* margin-left: 100px; */
-    background-color: #91e90d;
+.price-trash {
     display: flex;
-    position: static;
+    justify-content: space-between;
+    margin: 10px auto;
+
+}
+.trash {
+    margin-left: 50px;
+    cursor: pointer;
+    color: rgb(219, 120, 120);
+}
+.cart-price {
+    font-weight: 700;
+}
+input {
+    width: 2.0rem;
+    outline-color: red;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.total {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1.4px solid black;
+    gap: 10px;
+    margin-top: 5px;
+}
+.total-title {
+    font-weight: 600;
+    margin-top: 5px;
+}
+.total-price {
+    font-weight: 700;
+    margin-top: 5px;
+}
+.buy {
+    display: flex;
+    margin: 0 100px 0 ;
+    margin-top: 20px;
+    width: 80px;
+    align-items: center;
 }
