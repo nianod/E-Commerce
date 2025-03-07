@@ -45,7 +45,7 @@ section {
     box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 }
-.cart {
+.cart.active {
     right: 0;
 }
 .cart h2 {
@@ -195,7 +195,10 @@ input {
     top: 1rem;
     right: 0.8rem;
     font-size: px;
+    transition: 0.3s ease-in ;
 }
 #close-cart:hover {
     cursor: pointer;
+    background-color: rgba(137, 195, 96, 0.9);
+    padding: 5px;
 }
