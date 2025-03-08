@@ -47,7 +47,7 @@ section {
 }
 .cart.active {
     right: 0;
-}
+} 
 .cart h2 {
     text-align: center;
     color: rgb(180, 115, 115);
