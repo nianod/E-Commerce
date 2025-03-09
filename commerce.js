@@ -13,19 +13,19 @@ cartIcon.onclick = () => {
 closeCart.onclick = () => {
         cart.classList.remove("active");
 }
-if (document.readyState === 'loading') {
+if (document.readyState === 'loading') { //is the page still alive
     document.addEventListener('DOMContentLoaded', ready);
 } else {
     ready();
 }
 function ready() { 
-    const trashButtons = document.querySelectorAll('.trash');
-    console.log("Trash buttons found:", trashButtons);
+    const trashButton = document.querySelectorAll('.trash');
+    console.log("Trash buttons found:", trashButton);
 
-    trashButtons.forEach(button => {
+    trashButton.forEach(button => {
         button.addEventListener('click', removeCartItem);
     });
-}
+} 
 
 const removeCartItem = (event) => {
     const buttonClicked = event.target;
@@ -39,6 +39,17 @@ const removeCartItem = (event) => {
     } else {
         console.warn("No cart-box found. Check the HTML structure.");
     }
+}
+
+
+const updateTotalAmount = () => {
+    let total = 0;
+    const itemsInCart = document.querySelectorAll('.cart-box');
+
+    itemsInCart.forEach(itemInCart => {
+        const priceElement = itemInCart.querySelector('.cart-price');
+        const quantityElement = itemInCart.querySelector('cart-quantity')
+    })
 }
 
 // if(document.readyState == 'loading'){
