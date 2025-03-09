@@ -48,9 +48,17 @@ const updateTotalAmount = () => {
 
     itemsInCart.forEach(itemInCart => {
         const priceElement = itemInCart.querySelector('.cart-price');
-        const quantityElement = itemInCart.querySelector('cart-quantity')
-    })
-}
+        const quantityElement = itemInCart.querySelector('cart-quantity');
+        if(priceElement && quantityElement) {
+            const price = parseFloat(priceElement.innerText.replace('$', ''));
+            const quantity = parseInt(quantityElement.value);
+            total += price * quantity; ///multiply price by quantity
+        }
+    });
+
+    document.querySelector('.total-price').innerText = `$${total.toFixed(2)}`;
+
+};
 
 // if(document.readyState == 'loading'){
 //    document.addEventListener('DOMContentLoaded', ready)
