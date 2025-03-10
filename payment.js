@@ -1,3 +1,4 @@
+const { maxHeaderSize } = require("http");
 const readline = require("readline");
 const rl= readline.createInterface({
     input:process.stdin,
@@ -11,14 +12,23 @@ rl.question("What is your budget for the selcted item? ", function(price) {
         nextPrice();      
     }
     const nextPrice = () => {
-        let MinimumPrice;
-        let MaximumPrice = '$100 >= ';
-        for(MinimumPrice = i; i < 10; i++) {
-            console.log("That price is not Valid");
-        }
-        if(price === "maximumPrice".toLowerCase){
-            console.log("The price is too high");
+        let MinimumPrice = document.getElementById('cart-price');
+        let MaximumPrice = document.getElementById('cart-quantity');
+        if(MinimumPrice <= 0 && MaximumPrice >= $500) {
+            console.log("The price is illogical");            
+        } else if(MaximumPrice && MinimumPrice >= 0 || MaximumPrice && MinimumPrice == 500) {
+            console.log("Thanks for purchasing");
             
+        } else {
+            return MaximumPrice;
         }
+        rl.close();
+
+        // for(MinimumPrice = i; i < 10; i++) {
+        //     console.log("That price is not Valid");
+        // if(price === "maximumPrice".toLowerCase){
+        //     console.log("The price is too high");
+            
+        // }
     }
 });
