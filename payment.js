@@ -8,9 +8,10 @@ rl.question("What is your budget for the selcted item? ", function(price) {
         console.log("The price is Fiar");
         
     } else {
-        nextPrice();
+        nextPrice();      
     }
     const nextPrice = () => {
-        
+        let MinimumPrice;
+        let MaximumPrice
     }
 });
