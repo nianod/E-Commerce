@@ -2,7 +2,7 @@
 
 const cartIcon = document.querySelector("#cart-icon");
 const cart = document.querySelector(".cart");
-const closeCart = document.querySelector("#close-cart");
+const closeCart = document.getElementById("close-cart");
 
 
 
@@ -46,9 +46,14 @@ const updateTotalAmount = () => {
     let total = 0;
     const itemsInCart = document.querySelectorAll('.cart-box');
 
+    if(itemsInCart.length === 0){
+        document.querySelector('.total-price').innerHTML = "$0.00"
+        return;
+    }
+
     itemsInCart.forEach(itemInCart => {
         const priceElement = itemInCart.querySelector('.cart-price');
-        const quantityElement = itemInCart.querySelector('cart-quantity');
+        const quantityElement = itemInCart.querySelector('.cart-quantity');
         if(priceElement && quantityElement) {
             const price = parseFloat(priceElement.innerText.replace('$', ''));
             const quantity = parseInt(quantityElement.value);
@@ -60,23 +65,23 @@ const updateTotalAmount = () => {
 
 };
 
-// if(document.readyState == 'loading'){
-//    document.addEventListener('DOMContentLoaded', ready)
-// } else {
-//     ready();
-// }
+// // if(document.readyState == 'loading'){
+// //    document.addEventListener('DOMContentLoaded', ready)
+// // } else {
+// //     ready();
+// // }
 
-// function ready() { 
-//     let removeItem = document.getElementsByClassName('trash');
-//     console.log(removeItem);
-//     for(let i = 0; i < removeItem.length; i++) {
-//         let button = removeItem[i]
-//         button.addEventListener('click', removeCartItem);
-//     }
+// // function ready() { 
+// //     let removeItem = document.getElementsByClassName('trash');
+// //     console.log(removeItem);
+// //     for(let i = 0; i < removeItem.length; i++) {
+// //         let button = removeItem[i]
+// //         button.addEventListener('click', removeCartItem);
+// //     }
     
-// }
-// function removeCartItem(event) {
-//     let buttonClicked = event.target
-//     buttonClicked.parentElement.remove();
-// }
+// // }
+// // function removeCartItem(event) {
+// //     let buttonClicked = event.target
+// //     buttonClicked.parentElement.remove();
+// // }
  

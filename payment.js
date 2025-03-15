@@ -22,13 +22,7 @@ rl.question("What is your budget for the selcted item? ", function(price) {
         } else {
             return MaximumPrice;
         }
-        rl.close();
+        rl.close(); 
 
-        // for(MinimumPrice = i; i < 10; i++) {
-        //     console.log("That price is not Valid");
-        // if(price === "maximumPrice".toLowerCase){
-        //     console.log("The price is too high");
-            
-        // }
     }
 });
