@@ -5,6 +5,7 @@ const rl= readline.createInterface({
     output:process.stdout
 });
 rl.question("What is your budget for the selcted item? ", function(price) {
+    while(true){
     if(price >= '$10'.toLowerCase()) {
         console.log("The price is Fiar");
         
@@ -25,4 +26,6 @@ rl.question("What is your budget for the selcted item? ", function(price) {
         rl.close(); 
 
     }
+    nextPrice();
+}
 });

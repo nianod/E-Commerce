@@ -64,7 +64,10 @@ const updateTotalAmount = () => {
     document.querySelector('.total-price').innerText = `$${total.toFixed(2)}`;
 
 };
-
+const buy = document.getElementById("buy-now");
+buy.addEventListener("click", () => {
+    alert("Bought successfully");
+})
 // // if(document.readyState == 'loading'){
 // //    document.addEventListener('DOMContentLoaded', ready)
 // // } else {
