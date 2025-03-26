@@ -18,7 +18,8 @@ if (document.readyState === 'loading') { //is the page still alive
 } else {
     ready();
 }
-function ready() { 
+function ready(event) { 
+    event.preventDefault();
     const trashButton = document.querySelectorAll('.trash');
     console.log("Trash buttons found:", trashButton);
 
