@@ -5,9 +5,8 @@ const rl= readline.createInterface({
     output:process.stdout
 });
 rl.question("What is your budget for the selcted item? ", function(price) {
-    while(true){
     if(price >= '$10'.toLowerCase()) {
-        console.log("The price is Fiar");
+        console.log("The price is Fair");
         
     } else {
         nextPrice();      
@@ -24,8 +23,7 @@ rl.question("What is your budget for the selcted item? ", function(price) {
             return MaximumPrice;
         }
         rl.close(); 
-
     }
     nextPrice();
-}
+
 });
